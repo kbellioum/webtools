@@ -15,6 +15,8 @@ Installation steps :
 
 get clone https://github.com/kbellioum/webtools.git
 
-cd webtools
-npm install
-npm start
+ cd webtools
+
+ npm install
+
+ npm start
