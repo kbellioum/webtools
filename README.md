@@ -20,5 +20,5 @@ npm install
 ```
 to execute :
 ```bash
-# npm start
+npm start
 ```
