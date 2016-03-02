@@ -14,11 +14,11 @@ Installation steps :
 
 
 ```bash
-# get clone https://github.com/kbellioum/webtools.git
-
-# cd webtools
-
-# npm install
-
+get clone https://github.com/kbellioum/webtools.git
+cd webtools
+npm install
+```
+to execute :
+```bash
 # npm start
 ```
