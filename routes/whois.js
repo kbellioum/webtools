@@ -7,7 +7,12 @@ var exec = require('child_process').exec;
 
 router.get('/', function(req, res) {
 
+  if(req.query['ipaddr'].length==0){
 
+    res.render('whoisresult', {toto: ""});
+
+  }
+  else {
   function puts(error, stdout, stderr) {
   	util.puts(stdout);
 
@@ -19,6 +24,7 @@ router.get('/', function(req, res) {
 
   exec("whois " + req.query['ipaddr'],puts);
 
+}
 
 });
 

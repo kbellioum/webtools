@@ -7,19 +7,25 @@ var exec = require('child_process').exec;
 
 router.get('/', function(req, res) {
 
+    if(req.query['ipaddr'].length==0){
 
-  function puts(error, stdout, stderr) {
-  	util.puts(stdout);
+      res.render('pingresult', {toto: ""});
 
+    }
+    else {
 
-  	res.render('pingresult', {toto: stdout.split(/\n/g)});
-   }
-
-
-
-  exec("ping -c 4 "+req.query['ipaddr'],puts);
+      function puts(error, stdout, stderr) {
+      	util.puts(stdout);
 
 
+      	res.render('pingresult', {toto: stdout.split(/\n/g)});
+       }
+
+
+
+      exec("ping -c 4 "+req.query['ipaddr'],puts);
+
+}
 
 
 

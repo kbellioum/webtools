@@ -1,3 +1,4 @@
+<!--
 <h1>Whois</h1>
 
 <div class="well well-sm">
@@ -7,3 +8,21 @@
 
 
 </div>
+-->
+{{#if toto}}
+      <h1>Whois</h1>
+
+      <div class="well well-sm">
+        {{#each toto}}
+          {{this}}<br>
+        {{/each}}
+      </div>
+{{else}}
+    <div class="alert alert-danger alert-dismissible fade in" role="alert">
+      <h4>Oops! You got an error!</h4>
+      <p>You must give a domain name.</p>
+      <p>
+        <a class="btn btn-danger" href="/whois" type="button">Whois tool</a>
+      </p>
+    </div>
+{{/if}}

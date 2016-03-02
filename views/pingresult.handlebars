@@ -1,9 +1,17 @@
-<h1>IP Address</h1>
+{{#if toto}}
+      <h1>IP Address</h1>
 
-<div class="well well-sm">
-  {{#each toto}}
-    {{this}}<br>
-  {{/each}}
-
-
-</div>
+      <div class="well well-sm">
+        {{#each toto}}
+          {{this}}<br>
+        {{/each}}
+      </div>
+{{else}}
+    <div class="alert alert-danger alert-dismissible fade in" role="alert">
+      <h4>Oops! You got an error!</h4>
+      <p>You must give an ip address.</p>
+      <p>
+        <a class="btn btn-danger" href="/ping" type="button">Ping tool</a>
+      </p>
+    </div>
+{{/if}}
