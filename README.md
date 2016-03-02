@@ -4,7 +4,7 @@ This tools help us doing some tests like :
 
  - Ping
  - Whois
- - Port Scan 
+ - Port Scan
 
 I'm working on other tools
 
@@ -14,11 +14,11 @@ Installation steps :
 
 
 ```bash
-get clone https://github.com/kbellioum/webtools.git
+# get clone https://github.com/kbellioum/webtools.git
 
-cd webtools
+# cd webtools
 
-npm install
+# npm install
 
-npm start
+# npm start
 ```
