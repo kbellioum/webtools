@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var util = require('util'),
+var util = require('util');
 var exec = require('child_process').exec;
 
 
