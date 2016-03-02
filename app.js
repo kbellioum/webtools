@@ -11,6 +11,7 @@ var exphbs  = require('express-handlebars');
 var routes = require('./routes/index');
 var ping = require('./routes/ping');
 var whois = require('./routes/whois');
+var portscan = require('./routes/portscan');
 
 var app = express();
 
@@ -41,6 +42,8 @@ app.use('/ping', ping);
 app.use('/pingresult', ping);
 app.use('/whois', whois);
 app.use('/whoisresult', whois);
+app.use('/portscan', portscan);
+app.use('/portscanresult', portscan);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

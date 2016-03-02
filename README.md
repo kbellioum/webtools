@@ -14,9 +14,10 @@ Installation steps :
 
 
 get clone https://github.com/kbellioum/webtools.git
-
+```bash
  cd webtools
 
  npm install
 
  npm start
+```

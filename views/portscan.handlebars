@@ -1,0 +1,16 @@
+<p>Welcome to {{title}}</p>
+
+<form action="/portscanresult" method="get">
+    <p>Port to scan : </p>
+
+
+    <div class="input">
+      <input type="text" name="port" class="form-control" placeholder="80,443 ...">
+      <br>
+      <input type="text" name="ipaddr" class="form-control" placeholder="192.168.xx.xx ...">
+      <br>
+      <span class="input-btn">
+        <button class="btn btn-default" type="submit">scanport</button>
+      </span>
+    </div>
+</form>
