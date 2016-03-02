@@ -4,20 +4,21 @@ This tools help us doing some tests like :
 
  - Ping
  - Whois
+ - Port Scan 
 
- I'm working on other tools
+I'm working on other tools
 
 
 Installation steps :
 --------------------
 
 
-
-get clone https://github.com/kbellioum/webtools.git
 ```bash
- cd webtools
+get clone https://github.com/kbellioum/webtools.git
 
- npm install
+cd webtools
 
- npm start
+npm install
+
+npm start
 ```
