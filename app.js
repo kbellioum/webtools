@@ -36,6 +36,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/index', routes);
 app.use('/ping', ping);
 app.use('/pingresult', ping);
 app.use('/whois', whois);
