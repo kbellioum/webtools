@@ -24,7 +24,7 @@ router.get('/', function(req, res) {
 
 
       exec("ping -c 4 "+req.query['ipaddr'],puts);
-
+      //exec("docker ps -aq",puts);
 }
 
 
